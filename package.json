@@ -1,0 +1,16 @@
+{
+  "name": "adventofcode2022",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "debug": "npm run build && node dist/00/part1 --debug-brk=5858",
+    "dev1": "node dist/00/part1",
+    "devx": "node --max-old-space-size=12288 dist/00/part1"
+  },
+  "author": "",
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "typescript": "^4.9.3"
+  }
+}

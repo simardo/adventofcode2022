@@ -1,0 +1,15 @@
+{
+    "editor.detectIndentation": false,
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/*/*.map": true,
+        "**/node_modules/": true
+    },
+    "editor.tabSize": 4,
+    "files.trimTrailingWhitespace": false,
+    "files.insertFinalNewline": true,
+    "typescript.preferences.quoteStyle": "single",
+    "deno.enable": true,
+    "deno.lint": true,
+    "deno.unstable": false
+}
