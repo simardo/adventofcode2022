@@ -16,13 +16,11 @@ const TEST1 = `1000
 10000`;
 
 function doPart(input: string): string | number {
-    const tot: number = input.split('\n\n')
+    return input.split('\n\n')
         .map(elf => elf.split('\n')
             .map(cal => Number.parseInt(cal))
             .reduce((p, v) => p + v, 0))
         .reduce((p, v) => Math.max(p, v), 0);
-
-    return tot;
 }
 
 function go(input: string, expected?: number | string): void {
