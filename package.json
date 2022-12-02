@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "build": "tsc",
-    "debug": "npm run build && node dist/00/part1 --debug-brk=5858",
-    "dev1": "node dist/00/part1",
+    "debug": "tsc && node dist/02/part1 --debug-brk=5858",
+    "dev": "tsc && node",
     "devx": "node --max-old-space-size=12288 dist/00/part1"
   },
   "author": "",

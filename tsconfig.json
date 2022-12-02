@@ -5,5 +5,8 @@
         "module": "CommonJS",
         "outDir": "dist",
         "sourceMap": true
-    }
+    },
+    "include": [
+        "./02/**/*"
+    ]
 }
