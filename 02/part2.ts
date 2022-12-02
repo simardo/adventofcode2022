@@ -31,7 +31,7 @@ const score: Dict<number> = {
 };
 
 function doPart(input: string): string | number {
-    const result: number = input.split('\n').reduce((p, v) => {
+    return input.split('\n').reduce((p, v) => {
         const [opp, exp] = v.split(' ');
 
         if (exp === 'Z') {
@@ -44,8 +44,6 @@ function doPart(input: string): string | number {
 
         return p;
     }, 0);
-
-    return result;
 }
 
 function go(input: string, expected?: number | string): void {

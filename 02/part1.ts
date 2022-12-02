@@ -25,13 +25,11 @@ const score: Dict<number> = {
 };
 
 function doPart(input: string): string | number {
-    const result: number = input.split('\n').reduce((p, v) => {
+    return input.split('\n').reduce((p, v) => {
         const [opp, me] = v.split(' ');
 
         return p + score[me] + (eq[opp] === me ? 3 : win[opp] === me ? 6 : 0);
     }, 0);
-
-    return result;
 }
 
 function go(input: string, expected?: number | string): void {
