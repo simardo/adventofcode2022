@@ -18,7 +18,7 @@ function doPart(input: string): string | number {
         const dup: string = low.find(l => highSet.has(l))!;
 
         return p += dup.charCodeAt(0) - (dup === dup.toLowerCase() ? 96 : 38);
-    }, 0)
+    }, 0);
 }
 
 function go(input: string, expected?: number | string): void {
