@@ -2,6 +2,8 @@
 
 const TEST1 = ``;
 
+// type Dict<T> = { [key: string]: T };
+
 function doPart(input: string): string | number {
     const lines: string[] = input.split('\n').map(s => s);
     const nums: number[] = input.split('\n').map(s => Number.parseInt(s));
