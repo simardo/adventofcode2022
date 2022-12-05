@@ -48,7 +48,6 @@ function doPart(input: string): string | number {
             for (let q = 1; q <= qty; q++) {
                 stackTo.push(stackFrom.pop()!);
             }
-            
         }
     })
 
