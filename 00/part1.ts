@@ -1,4 +1,4 @@
-// import { INPUT } from './input.ts';
+import { INPUT } from './input.ts';
 
 const TEST1 = ``;
 
@@ -15,7 +15,9 @@ function doPart(input: string): string | number {
 }
 
 function go(input: string, expected?: number | string): void {
+    // console.time();
     const result: number | string = doPart(input);
+    // console.timeEnd();
     console.log(`--> ${result} <--`);
     console.assert(!expected || result === expected, 'got: %s, expected: %s', result, expected);
 }
