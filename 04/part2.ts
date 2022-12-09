@@ -8,7 +8,7 @@ const TEST1 = `2-4,6-8
 2-6,4-8`;
 
 function doPart(input: string): string | number {
-    const lines: string[] = input.split('\n').map(s => s);
+    const lines: string[] = input.split('\n');
 
     return lines.reduce((p, v) => {
         const [pair1, pair2] = v.split(',');
