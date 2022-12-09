@@ -8,7 +8,7 @@ ttgJtRGJQctTZtZT
 CrZsJsPPZsGzwwsLwLmpwMDw`;
 
 function doPart(input: string): string | number {
-    const lines: string[] = input.split('\n').map(s => s);
+    const lines: string[] = input.split('\n');
 
     let sum = 0;
     while (lines.length > 0) {
