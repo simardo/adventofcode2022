@@ -11,7 +11,7 @@ move 2 from 2 to 1
 move 1 from 1 to 2`;
 
 function doPart(input: string): string | number {
-    const lines: string[] = input.split('\n').map(s => s);
+    const lines: string[] = input.split('\n');
 
     const stacks: string[][] = [];
 
