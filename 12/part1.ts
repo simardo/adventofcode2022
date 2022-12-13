@@ -9,7 +9,6 @@ abdefghi`;
 
 type Coords = [number, number];
 
-
 function doPart(input: string): string | number {
     const map: string[][] = input.split('\n').map(s => [...s]);
 
